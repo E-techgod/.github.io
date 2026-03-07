@@ -255,30 +255,14 @@
   .orbit-ring:nth-child(2) .orbit-dot { background: var(--accent2); box-shadow: 0 0 12px var(--accent2); }
   .orbit-ring:nth-child(3) .orbit-dot { background: var(--red); box-shadow: 0 0 12px var(--red); }
 
-  .hero-center-box {
+  .hero-center-dot {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    padding: 20px 24px;
-    text-align: center;
-    min-width: 140px;
-  }
-  .hero-center-box .stat {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    color: var(--accent);
-    line-height: 1;
-  }
-  .hero-center-box .stat-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.6rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-top: 4px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 20px var(--accent), 0 0 40px rgba(232,255,71,0.3);
   }
 
   .hero-pills {
@@ -785,10 +769,7 @@
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
-      <div class="hero-center-box">
-        <div class="stat">3.7</div>
-        <div class="stat-label">GPA · Dean's List</div>
-      </div>
+      <div class="hero-center-dot"></div>
     </div>
     <div class="hero-pills">
       <div class="pill"><div class="pill-dot"></div>scikit-learn</div>
