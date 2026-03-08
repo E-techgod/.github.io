@@ -31,7 +31,6 @@
     cursor: none;
   }
 
-  /* CURSOR */
   .cursor {
     position: fixed;
     width: 10px; height: 10px;
@@ -57,7 +56,6 @@
   .cursor.hover { width: 20px; height: 20px; background: var(--accent2); }
   .cursor-ring.hover { width: 56px; height: 56px; border-color: var(--accent2); opacity: 1; }
 
-  /* NOISE OVERLAY */
   body::before {
     content: '';
     position: fixed;
@@ -68,7 +66,6 @@
     opacity: 0.4;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -104,7 +101,6 @@
   }
   .nav-links a:hover { color: var(--accent); }
 
-  /* HERO */
   #hero {
     min-height: 100vh;
     display: grid;
@@ -158,7 +154,7 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #888;
-    max-width: 380px;
+    max-width: 420px;
     margin-bottom: 48px;
   }
 
@@ -202,7 +198,6 @@
     justify-content: center;
   }
 
-  /* Grid pattern hero right */
   .hero-grid-bg {
     position: absolute;
     inset: 0;
@@ -314,7 +309,6 @@
   .pill:nth-child(3) { animation-delay: 0.4s; }
   .pill:nth-child(4) { animation-delay: 0.6s; }
 
-  /* DIVIDER */
   .section-divider {
     display: flex;
     align-items: center;
@@ -331,7 +325,6 @@
     text-transform: uppercase;
   }
 
-  /* SECTIONS */
   section { position: relative; z-index: 1; }
 
   .section-header {
@@ -356,7 +349,6 @@
     padding-top: 6px;
   }
 
-  /* PROJECTS */
   #projects .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -475,20 +467,13 @@
     border: 1px solid rgba(232,255,71,0.15);
   }
 
-  /* featured visual */
   .featured-visual {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 220px;
   }
-  .radar-chart {
-    position: relative;
-    width: 180px; height: 180px;
-  }
-  .radar-chart svg { width: 100%; height: 100%; }
 
-  /* SKILLS */
   #skills {
     padding: 0 72px 80px;
   }
@@ -540,7 +525,6 @@
     background: var(--surface2);
   }
 
-  /* ABOUT / EDUCATION */
   #about {
     padding: 0 72px 80px;
     display: grid;
@@ -603,7 +587,6 @@
     gap: 24px;
     margin-top: 16px;
   }
-  .stat-block {}
   .stat-block .num {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -621,7 +604,6 @@
     margin-top: 4px;
   }
 
-  /* CONTACT */
   #contact {
     padding: 0 72px 80px;
   }
@@ -677,7 +659,6 @@
   }
   .contact-link:hover .contact-link-icon { opacity: 1; }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 24px 72px;
@@ -692,7 +673,6 @@
     letter-spacing: 0.08em;
   }
 
-  /* SCROLL REVEAL */
   .reveal {
     opacity: 0;
     transform: translateY(24px);
@@ -703,7 +683,6 @@
     transform: translateY(0);
   }
 
-  /* ANIMATIONS */
   @keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
@@ -726,7 +705,6 @@
   .hero-left > *:nth-child(3) { animation-delay: 0.4s; }
   .hero-left > *:nth-child(4) { animation-delay: 0.55s; }
 
-  /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 20px 24px; }
     .nav-links { gap: 20px; }
@@ -752,7 +730,6 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">EAC</div>
   <ul class="nav-links">
@@ -763,7 +740,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-left">
     <div class="hero-tag">Machine Learning Engineer</div>
@@ -771,7 +747,7 @@
       Elias<br>Arellano<br><span>Campos</span>
     </h1>
     <p class="hero-desc">
-      Building intelligent systems from the ground up — from data pipelines to deployed ML models. CS student at University of Houston, specializing in Data Science & Machine Learning.
+      Building intelligent systems from the ground up — from data pipelines to deployed ML models. Computer Science student at the University of Houston focused on machine learning, data science, and real-world AI applications.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects →</a>
@@ -786,8 +762,8 @@
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
       <div class="orbit-ring"><div class="orbit-dot"></div></div>
       <div class="hero-center-box">
-        <div class="stat">3.7</div>
-        <div class="stat-label">GPA · Dean's List</div>
+        <div class="stat">4+</div>
+        <div class="stat-label">ML Projects</div>
       </div>
     </div>
     <div class="hero-pills">
@@ -799,7 +775,6 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <div class="section-divider"><div class="divider-line"></div><div class="divider-label">Selected Work</div><div class="divider-line"></div></div>
 
 <section id="projects">
@@ -809,8 +784,6 @@
   </div>
 
   <div class="projects-grid">
-
-    <!-- FEATURED: Fraud Detection -->
     <div class="project-card featured reveal">
       <div>
         <div class="project-header">
@@ -845,20 +818,15 @@
         </div>
       </div>
       <div class="featured-visual">
-        <!-- Mini visual: confusion matrix style -->
         <svg viewBox="0 0 160 160" width="160" height="160">
           <rect x="10" y="10" width="65" height="65" fill="none" stroke="#222" stroke-width="1"/>
           <rect x="85" y="10" width="65" height="65" fill="none" stroke="#222" stroke-width="1"/>
           <rect x="10" y="85" width="65" height="65" fill="none" stroke="#222" stroke-width="1"/>
           <rect x="85" y="85" width="65" height="65" fill="none" stroke="#222" stroke-width="1"/>
 
-          <!-- TP - strong green -->
           <rect x="10" y="10" width="65" height="65" fill="rgba(232,255,71,0.35)"/>
-          <!-- TN - medium -->
           <rect x="85" y="85" width="65" height="65" fill="rgba(232,255,71,0.25)"/>
-          <!-- FP - red faint -->
           <rect x="85" y="10" width="65" height="65" fill="rgba(255,71,71,0.1)"/>
-          <!-- FN - red faint -->
           <rect x="10" y="85" width="65" height="65" fill="rgba(255,71,71,0.08)"/>
 
           <text x="42" y="48" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="#e8ff47">TP</text>
@@ -871,7 +839,6 @@
       </div>
     </div>
 
-    <!-- Tennis Predictor -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-tag">Predictive ML</span>
@@ -903,7 +870,6 @@
       </div>
     </div>
 
-    <!-- NLP Opinion Search -->
     <div class="project-card reveal">
       <div class="project-header">
         <span class="project-tag">NLP · IR</span>
@@ -935,7 +901,6 @@
       </div>
     </div>
 
-    <!-- F1 Recognition -->
     <div class="project-card reveal" style="grid-column: span 2;">
       <div class="project-header">
         <span class="project-tag">Computer Vision · Analytics</span>
@@ -968,11 +933,9 @@
         <span class="stack-tag">Data Analytics</span>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- SKILLS -->
 <div class="section-divider"><div class="divider-line"></div><div class="divider-label">Capabilities</div><div class="divider-line"></div></div>
 
 <section id="skills">
@@ -1032,7 +995,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <div class="section-divider"><div class="divider-line"></div><div class="divider-label">Background</div><div class="divider-line"></div></div>
 
 <section id="about">
@@ -1052,10 +1014,10 @@
           Expected May 2026 · Houston, TX
         </div>
         <div class="edu-badges">
-          <span class="edu-badge badge-accent">GPA 3.7</span>
           <span class="edu-badge badge-ghost">Dean's List</span>
           <span class="edu-badge badge-ghost">Data Science</span>
           <span class="edu-badge badge-ghost">Machine Learning</span>
+          <span class="edu-badge badge-ghost">Mathematics Minor</span>
         </div>
       </div>
     </div>
@@ -1068,16 +1030,16 @@
           <div class="lbl">ML Projects</div>
         </div>
         <div class="stat-block">
-          <div class="num">3<em>.</em>7</div>
-          <div class="lbl">GPA</div>
-        </div>
-        <div class="stat-block">
           <div class="num">20<em>+</em></div>
           <div class="lbl">Technologies</div>
         </div>
         <div class="stat-block">
           <div class="num">2<em>×</em></div>
           <div class="lbl">Languages</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">2026</div>
+          <div class="lbl">Graduation</div>
         </div>
       </div>
       <p style="color:#666; font-size:0.85rem; line-height:1.7; margin-top:24px;">
@@ -1087,7 +1049,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <div class="section-divider"><div class="divider-line"></div><div class="divider-label">Let's Connect</div><div class="divider-line"></div></div>
 
 <section id="contact">
@@ -1128,7 +1089,6 @@
 </footer>
 
 <script>
-  // Cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1153,7 +1113,6 @@
     el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); ring.classList.remove('hover'); });
   });
 
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
