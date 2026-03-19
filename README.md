@@ -12,6 +12,6 @@ End-to-end ML systems across NLP, Computer Vision, and Predictive Modeling
 - 🎾 Tennis Match Predictor — Logistic Regression + RF, deployed as Shiny app
 
 ## 🛠 Stack
-Python · PyTorch · scikit-learn · OpenCV · Flask · SQL · R
+Python · PyTorch · scikit-learn · OpenCV · Flask · SQL · R · Tensorflow 
 
 📫 elias.arellano.campos@gmail.com
